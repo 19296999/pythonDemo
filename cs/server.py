@@ -7,7 +7,7 @@ sock.listen(5)
 while True:  
 	connection,address = sock.accept() 
  
-        buf = connection.recv(1024)
+        buf = connection.recv(1)
 	print "I receive:", buf 
  
         if buf == '1':  

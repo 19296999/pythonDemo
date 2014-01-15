@@ -8,7 +8,7 @@ sock.connect(('localhost', 8001))
 time.sleep(2) 
  
 sock.send('1')  
-print sock.recv(1024) 
+print sock.recv(20) 
 
 sock.close()  
 
