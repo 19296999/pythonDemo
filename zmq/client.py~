@@ -6,7 +6,7 @@
 #
 #   Hello World client in Python
 #   Connects REQ socket to tcp://localhost:5555
-#   发送十次请求到服务器
+#   Sends "Hello" to server, expects "World" back
 #
 import zmq
 
@@ -25,10 +25,4 @@ for i in range (0,10):
     #  Get the reply.
     message = socket.recv()
     print "Received reply ", i, "[", message, "]"
-
-# <codecell>
-
-
-# <codecell>
-
 

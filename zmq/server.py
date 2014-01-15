@@ -6,7 +6,7 @@
 #
 #   Hello World server in Python
 #   Binds REP socket to tcp://*:5555
-#   Expects "Hello" from client, replies with "World"
+#   响应客户端的请求
 #
 import zmq
 import time
@@ -24,4 +24,7 @@ while True:
        	socket.send('welcome to server!')  
     else: 
         socket.send('bye')
+
+# <codecell>
+
 
